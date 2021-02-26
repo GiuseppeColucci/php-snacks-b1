@@ -26,10 +26,27 @@
     ],
  ];
  for($i=0; $i < count($matches); $i++){
-    echo $matches[$i]["casa"];
+    echo "<p>";
+    echo "Partita";
+
+    echo "</p>";
+
+     echo "<p>";
+     echo$matches[$i]["casa"];
+     echo "</p>";
+     echo "<p>";
+
      echo $matches[$i]["ospite"];
+     echo "</p>";
+     echo "<p>";
+
      echo $matches[$i]["Pospite"];
+     echo "</p>";
+     echo "<p>";
+
      echo $matches[$i]["Pcasa"];
+     echo "</p>";
+
 
 
  }
@@ -90,14 +107,15 @@ if(strpos($email,$chiocciola) !== false && strpos($email, $dot) !== false){
     <title>Document</title>
 </head>
 <body>
+
+    
+
     <h1>verifica nome</h1>
-    Il risultato è <?php echo $response1 ?>
-
+   <p> Il risultato è <?php echo $response1 ?></p>
     <h1>email verifica</h1>
-
-    Il risultato è <?php echo $response ?>
+   <p> Il risultato è <?php echo $response ?></p>
     <h1>verifica età</h1>
-    Il risultato  <?php echo $response2 ?>
+    <p>Il risultato  <?php echo $response2 ?></p>
 
 </body>
 </html>
