@@ -6,30 +6,27 @@
         */
 
  $matches=[
-    "partita"=>[
+    [
         "ospite"=>"Bull",
         "casa"=>"LE",
         "Pospite"=>15,
         "Pcasa"=>17
     ],
-    "partita"=>[
+    [
         "ospite"=>"Bull",
         "casa"=>"LE",
         "Pospite"=>1,
         "Pcasa"=>7
     ],
-    "partita"=>[
+    [
         "ospite"=>"Bull",
         "casa"=>"LE",
         "Pospite"=>10,
         "Pcasa"=>5
     ],
  ];
- for($i=0; $i<$matches.length; $i++){
-   echo $partita["ospite"];
-   echo $partita["casa"];
-   echo $partita["Pospite"];
-   echo $partita["Pcasa"];
+ for($i=0; $i < count($matches); $i++){
+    echo $matches[$i]["casa"].["ospite"].["Pospite"].["Pcasa"];
 
 
  }
